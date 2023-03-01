@@ -1,3 +1,6 @@
+'use client';
+import { Box } from '@chakra-ui/react';
+
 export default function Home() {
-  return <div>Panaverse Dao</div>;
+  return <Box bg='red.400'>Panaverse Dao</Box>;
 }
