@@ -3,6 +3,8 @@
 import './global.css';
 import React from 'react';
 import ChakraWrapper from '@/chakraWrapper/Chakra';
+import Header from '@/appComponents/header/Header';
+import Footer from '@/appComponents/footer/Footer';
 
 export const metadata = {
   title: 'Panaverse Dao',
@@ -20,7 +22,11 @@ export default function RootLayout({
       <body>
         <ChakraWrapper>
           <div className='body'>
-            <div>{children}</div>
+            <div>
+              <Header />
+              {children}
+            </div>
+            <Footer />
           </div>
         </ChakraWrapper>
       </body>
