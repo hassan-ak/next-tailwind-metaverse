@@ -1,5 +1,7 @@
 // Root Layout
 
+import './global.css';
+import React from 'react';
 import ChakraWrapper from '@/chakraWrapper/Chakra';
 
 export const metadata = {
@@ -14,8 +16,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
+      <head />
       <body>
-        <ChakraWrapper>{children}</ChakraWrapper>
+        <ChakraWrapper>
+          <div className='body'>
+            <div>{children}</div>
+          </div>
+        </ChakraWrapper>
       </body>
     </html>
   );
